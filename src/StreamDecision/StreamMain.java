@@ -13,10 +13,10 @@ public class StreamMain {
          * и четность
          * сортируем по значению
          */
-        Stream<Integer> stream = intList.stream()
+        intList.stream()
                 .filter(x -> x > 0)
                 .filter(x -> x % 2 == 0)
-                .sorted(Comparator.naturalOrder());
-        stream.forEach(System.out::println);
+                .sorted(Comparator.naturalOrder())
+                .forEach(System.out::println);
     }
 }
